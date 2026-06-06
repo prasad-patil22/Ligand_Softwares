@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { AlertCircle, FileText, ExternalLink, Trash2 } from "lucide-react";
 
-const APPLICATIONS_API_URL = "http://localhost:8000/api/applications";
+const APPLICATIONS_API_URL = "https://ligand-softwares-328p.onrender.com/api/applications";
 
 export default function ManageApplications() {
   const [applications, setApplications] = useState([]);

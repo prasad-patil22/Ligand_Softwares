@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { AlertCircle, MessageSquare, Trash2, X, Send } from "lucide-react";
 
-const CONTACT_API_URL = "http://localhost:8000/api/contact";
+const CONTACT_API_URL = "https://ligand-softwares-328p.onrender.com/api/contact";
 
 export default function ManageMessages() {
   const [contactMessages, setContactMessages] = useState([]);

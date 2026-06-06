@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Plus, Upload, X, Edit3, Trash2, AlertCircle, BookOpen } from "lucide-react";
 
-const COURSES_API_URL = "http://localhost:8000/api/courses";
+const COURSES_API_URL = "https://ligand-softwares-328p.onrender.com/api/courses";
 
 export default function ManageCourses() {
   const [courses, setCourses] = useState([]);

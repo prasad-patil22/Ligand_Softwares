@@ -19,7 +19,7 @@ const {
   X
 } = Icons;
 
-const API_URL = "http://localhost:8000/api/admin";
+const API_URL = "https://ligand-softwares-328p.onrender.com/api/admin";
 
 export default function AdminLayout() {
   const navigate = useNavigate();

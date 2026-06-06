@@ -131,7 +131,7 @@ export default function Home({ onEnquiryClick, onJoinTrainingClick, onApplyClick
   useEffect(() => {
     const fetchServices = async () => {
       try {
-        const response = await fetch("http://localhost:8000/api/services");
+        const response = await fetch("https://ligand-softwares-328p.onrender.com/api/services");
         const data = await response.json();
         if (response.ok && data.services && data.services.length > 0) {
           setServices(data.services);

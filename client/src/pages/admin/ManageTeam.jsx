@@ -14,7 +14,7 @@ import {
   Github 
 } from "lucide-react";
 
-const TEAM_API_URL = "http://localhost:8000/api/team";
+const TEAM_API_URL = "https://ligand-softwares-328p.onrender.com/api/team";
 
 export default function ManageTeam() {
   const [team, setTeam] = useState([]);

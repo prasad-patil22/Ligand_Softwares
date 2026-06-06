@@ -82,7 +82,7 @@ function AppContent() {
     const checkServer = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:8000/api/health`
+          `https://ligand-softwares-328p.onrender.com/api/health`
         );
 
         if (response.data === "ok") {
@@ -98,7 +98,7 @@ function AppContent() {
   useEffect(() => {
     const fetchCoursesList = async () => {
       try {
-        const response = await fetch("http://localhost:8000/api/courses");
+        const response = await fetch("https://ligand-softwares-328p.onrender.com/api/courses");
         const data = await response.json();
         if (response.ok && data.courses && data.courses.length > 0) {
           setCoursesList(data.courses);
@@ -206,7 +206,7 @@ function AppContent() {
       reader.onloadend = async () => {
         const base64Resume = reader.result;
 
-        const response = await fetch("http://localhost:8000/api/applications", {
+        const response = await fetch("https://ligand-softwares-328p.onrender.com/api/applications", {
           method: "POST",
           headers: {
             "Content-Type": "application/json"

@@ -10,11 +10,11 @@ import {
   Database
 } from "lucide-react";
 
-const SERVICES_API_URL = "http://localhost:8000/api/services";
-const PROJECTS_API_URL = "http://localhost:8000/api/projects";
-const TESTIMONIALS_API_URL = "http://localhost:8000/api/testimonials";
-const TEAM_API_URL = "http://localhost:8000/api/team";
-const GALLERY_API_URL = "http://localhost:8000/api/gallery";
+const SERVICES_API_URL = "https://ligand-softwares-328p.onrender.com/api/services";
+const PROJECTS_API_URL = "https://ligand-softwares-328p.onrender.com/api/projects";
+const TESTIMONIALS_API_URL = "https://ligand-softwares-328p.onrender.com/api/testimonials";
+const TEAM_API_URL = "https://ligand-softwares-328p.onrender.com/api/team";
+const GALLERY_API_URL = "https://ligand-softwares-328p.onrender.com/api/gallery";
 
 export default function Overview() {
   const { admin } = useOutletContext();

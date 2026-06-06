@@ -9,7 +9,7 @@ export default function Team() {
   useEffect(() => {
     const fetchTeam = async () => {
       try {
-        const response = await fetch("http://localhost:8000/api/team");
+        const response = await fetch("https://ligand-softwares-328p.onrender.com/api/team");
         const data = await response.json();
         if (response.ok && data.team && data.team.length > 0) {
           setTeam(data.team);

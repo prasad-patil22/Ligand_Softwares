@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Mail, Lock, User, Eye, EyeOff, ShieldAlert, CheckCircle2, ArrowRight } from "lucide-react";
 
-const API_URL = "http://localhost:8000/api/admin";
+const API_URL = "https://ligand-softwares-328p.onrender.com/api/admin";
 
 export default function Login() {
   const navigate = useNavigate();

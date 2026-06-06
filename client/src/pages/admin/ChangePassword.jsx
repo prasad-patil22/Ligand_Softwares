@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Lock, Eye, EyeOff, AlertCircle, CheckCircle2 } from "lucide-react";
 
-const API_URL = "http://localhost:8000/api/admin";
+const API_URL = "https://ligand-softwares-328p.onrender.com/api/admin";
 
 export default function ChangePassword() {
   const [oldPassword, setOldPassword] = useState("");

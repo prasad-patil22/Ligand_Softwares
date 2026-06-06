@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Plus, X, Edit3, Trash2, AlertCircle, Code } from "lucide-react";
 import * as Icons from "lucide-react";
 
-const SERVICES_API_URL = "http://localhost:8000/api/services";
+const SERVICES_API_URL = "https://ligand-softwares-328p.onrender.com/api/services";
 
 // Dynamic Icon Component
 const DynamicIcon = ({ name, className }) => {

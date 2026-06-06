@@ -29,7 +29,7 @@ export default function Gallery() {
   useEffect(() => {
     const fetchGallery = async () => {
       try {
-        const response = await fetch("http://localhost:8000/api/gallery");
+        const response = await fetch("https://ligand-softwares-328p.onrender.com/api/gallery");
         const data = await response.json();
         if (response.ok && data.gallery && data.gallery.length > 0) {
           setGallery(data.gallery);

@@ -11,7 +11,7 @@ export default function Career({ onApplyClick }) {
   useEffect(() => {
     const fetchCareers = async () => {
       try {
-        const response = await fetch("http://localhost:8000/api/careers");
+        const response = await fetch("https://ligand-softwares-328p.onrender.com/api/careers");
         const data = await response.json();
         if (response.ok && data.careers && data.careers.length > 0) {
           setCareers(data.careers);

@@ -26,7 +26,7 @@ export default function Contact() {
     if (formData.name && formData.email && formData.message) {
       setLoading(true);
       try {
-        const response = await fetch("http://localhost:8000/api/contact", {
+        const response = await fetch("https://ligand-softwares-328p.onrender.com/api/contact", {
           method: "POST",
           headers: {
             "Content-Type": "application/json"

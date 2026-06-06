@@ -13,7 +13,7 @@ export default function Courses({ onEnrollClick }) {
   useEffect(() => {
     const fetchCourses = async () => {
       try {
-        const response = await fetch("http://localhost:8000/api/courses");
+        const response = await fetch("https://ligand-softwares-328p.onrender.com/api/courses");
         const data = await response.json();
         if (response.ok && data.courses && data.courses.length > 0) {
           setCourses(data.courses);

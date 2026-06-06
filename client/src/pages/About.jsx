@@ -13,7 +13,7 @@ export default function About() {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const response = await fetch("http://localhost:8000/api/projects");
+        const response = await fetch("https://ligand-softwares-328p.onrender.com/api/projects");
         const data = await response.json();
         if (response.ok && data.projects && data.projects.length > 0) {
           setProjects(data.projects);
@@ -33,7 +33,7 @@ export default function About() {
   useEffect(() => {
     const fetchTestimonials = async () => {
       try {
-        const response = await fetch("http://localhost:8000/api/testimonials");
+        const response = await fetch("https://ligand-softwares-328p.onrender.com/api/testimonials");
         const data = await response.json();
         if (response.ok && data.testimonials && data.testimonials.length > 0) {
           setTestimonials(data.testimonials);

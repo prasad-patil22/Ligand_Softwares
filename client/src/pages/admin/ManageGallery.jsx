@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Plus, X, Upload, Trash2, Edit3, AlertCircle } from "lucide-react";
 
-const GALLERY_API_URL = "http://localhost:8000/api/gallery";
+const GALLERY_API_URL = "https://ligand-softwares-328p.onrender.com/api/gallery";
 
 export default function ManageGallery() {
   const [gallery, setGallery] = useState([]);
