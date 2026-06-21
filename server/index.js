@@ -22,7 +22,8 @@ app.use(
     origin: [
       "http://localhost:3000",
       "https://ligand-softwares.vercel.app",
-      "https://www.ligandsoftware.com"
+      "https://www.ligandsoftware.com",
+      "https://ligandsoftware.com"
     ],
     credentials: true
   })
