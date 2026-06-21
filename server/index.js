@@ -17,11 +17,17 @@ import contactRoutes from "./routes/contactRoutes.js";
 
 
 const app = express();
-app.use(cors({
-  origin: true,
-  //  origin: ["http://localhost:3000" ],
-  credentials: true
-}));
+app.use(
+  cors({
+    origin: [
+      "http://localhost:3000",
+      "https://ligand-softwares.vercel.app",
+      "https://www.ligandsoftware.com"
+    ],
+    credentials: true
+  })
+);
+
 app.use(express.json({ limit: "50mb" }));
 app.use(express.urlencoded({ limit: "50mb", extended: true }));
 
